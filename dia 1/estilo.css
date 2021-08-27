@@ -1,52 +1,62 @@
 :root{
     --bgColor:#21212c;
-    --bgDivColor:#827C7B;
     --iconColor:#fff;
     --bgIconColor:#827C7B;
+    --facebook:#1873EB;
+    --instagram:#DA252A;
+    --pinterest:#B7071C;
+    --twitter:#00A6E8;
+    --linkedin:#0077B0;
 }
 body{
-    background:var(--bgColor);
+    background: var(--bgColor);
 }
+
 .contenedor{
-    width: 500px;
-    position: absolute;
-    background-color: var(--bgDivColor);
-    left: 40%;
-}
-.lista{
-    padding: 0;
-    margin:0;
-    list-style: none; 
     display: flex;
-    width: 100%;  
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
-
 .lista li{
-    display: inline;
-    box-sizing: border-box;
-    padding: 10px;
-    width: 100%;  
+    display: inline-block;
+    margin:0px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.lista li a {
+    display: block;
+    padding: 0px 10px;
+    background: var(--bgIconColor);
+    color: var(--iconColor);
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2), -4px -4px 8px 0px rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
 }
 
-i{
-    color: var(--iconColor);
-    background: var(--bgIconColor);
-    font-size: 28px;
-    
+.lista li a:hover a{
+    filter: blur(2px);
+}
+.lista li a:hover{
+    transform: translateY(-5px) scale(1.10);
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2), -8px -8px 8px 0px rgba(0, 0, 0, 0.2);
+    filter: none;
 }
 
 .facebook:hover{
-    --bgIconColor:#1873EB;
+    background:var(--facebook);
 }
 .instagram:hover{
-    --bgIconColor:#DA252A;
+    background:var(--instagram);
 }
 .twitter:hover{
-    --bgIconColor:#00A6E8;
+    background:var(--twitter);
 }
 .pinterest:hover{
-    --bgIconColor:#B7071C;
+    background:var(--pinterest);
 }
 .linkedin:hover{
-    --bgIconColor:#0077B0;
+    background:var(--linkedin);
 }
