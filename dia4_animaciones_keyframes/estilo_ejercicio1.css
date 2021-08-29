@@ -1,0 +1,32 @@
+html,body{
+    height: 100vh;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    height: 10vmin;
+    width: 10vmin;
+    animation:cambiarColor_cambiarTamanio 5s alternate infinite ;
+}
+
+@keyframes cambiarColor_cambiarTamanio{
+    0%{
+        background:#F25C10 ;
+        border-radius: 50%;
+        height: 10vmin;
+        width: 10vmin;
+    }
+    100%{
+        background: #F2E810;
+        border-radius: 0%;
+        height: 80vmin;
+        width: 80vmin;
+
+    }
+}
