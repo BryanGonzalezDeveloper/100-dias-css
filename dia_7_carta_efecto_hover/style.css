@@ -1,5 +1,99 @@
+:root{
+    --colorRosa:#F80867;
+    --colorNaranja:#FD4C08;
+    --colorVerde:#00B73B;
+}
+
 *{
     padding: 0;
     margin:0;
     box-sizing: border-box;
+}
+html,body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #21212c;
+
+}
+h1{
+    font-size: 2rem;
+    color: #3C9DDB;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 4px   #410CD0,-2px -1px #410CD0;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 1.5rem;
+}
+img{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.contenedorTarjeta{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    align-items: center;
+
+}
+.Tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    box-shadow: 4px 4px 6px #8513CE ,-4px -4px 6px #8513CE ;
+}
+.Tarjeta span{
+    display: block;
+}
+.titulo{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.info{
+    background-color: #fff;
+}
+.info h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+.descripcion{
+    color:#817E8A ;
+    text-align: center;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+.rosa .titulo, .rosa .info h2{
+color: var(--colorRosa);
+}
+.naranja .titulo, .naranja .info h2{
+    color: var(--colorNaranja);
+}
+.verde .titulo, .verde .info h2{
+    color:var(--colorVerde) ;
+}
+.estadistica{
+    display: flex;
+    margin-top: auto;
+    height: 55px;
+    align-items: center;
+    justify-content: space-around;
+}
+.estadistica div{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.estadistica div p{
+    text-align: center;
+}
+
+.rosa .estadistica{
+    background-color: var(--colorRosa);
+}
+.naranja .estadistica{
+    background-color: var(--colorNaranja);
+}
+.verde .estadistica{
+    background-color: var(--colorVerde);
 }
