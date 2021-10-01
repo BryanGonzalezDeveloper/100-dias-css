@@ -1,0 +1,129 @@
+:root{
+    --backgroundHtml:#E0C9CC;
+    --backgroundButton:#CCAAAC;
+    --fontColor:#C8A2A7;
+    --backgroundCard:#FFF;
+    --fontButtonColor:#FBFCF4;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100vh;
+    min-width: 100%;
+    background: var(--backgroundHtml);
+}
+
+body,.size, .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    height: 450px;
+    width: 700px;
+}
+.card{
+    background: var(--backgroundCard);
+    box-shadow: 2px 2px 6px #58595B,-2px -2px 6px #58595B,0px 0px 12px #000;
+}
+.card,.btn{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+div.image{
+    width: 100%;
+    height: 100%;
+}
+.divGrid,.buy{
+    display: grid;
+    grid-template-columns: [first]60% [line2]40%;
+}
+.buy .category{
+    margin-left: 10px;
+}
+.category,.price{
+    font-size: 1.5rem;
+}
+.category,.price, .size span{
+    color: var(--fontColor);
+    text-transform: uppercase;
+}
+.sizeContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.size{
+    border: 1px solid var(--fontColor);
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px;
+}
+.information .category,.price{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.name{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.description{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.btn{
+    height: 35px;
+    margin-top: 20px;
+    outline: 0;
+    border: 0;
+    background: var(--backgroundButton);
+    color: var(--fontButtonColor);
+}
+.cart{
+width: 78%;
+margin-right: 2%;
+}
+.love{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 18%;
+}
+/*Transicion*/
+.size,.btn{
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+/*Efecto hover*/
+.size:hover{
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
+.btn:hover{
+    background: var(--fontButtonColor);
+    color: var(--backgroundButton);
+    border: 1px solid var(--backgroundButton);
+}
+.size:hover,.btn:hover{
+    cursor: pointer;
+}
