@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    min-height: 100vh;
+    min-width: 100%;
+}
+body,.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 420px;
+    border: 2px solid #000;
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.instagram{
+    background-color: #E1306C;
+}
+
+.logo i{
+    display: block;
+    font-size: 4rem;
+    margin: 10px 0px;
+}
+.name,.logo, .description p{
+    text-align: center;
+}
+.description p{
+    margin-top: 10px;
+    padding: 0px 15px;
+}
+.btn{
+    margin-top: auto;
+    margin-bottom: 15px;
+    width: 80%;
+    margin-left: 10%;
+    height: 35px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border: 0;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.instagram .logo i,.instagram .description .name, .instagram .description p,.btn{
+    color: #fff;
+}
+.instagram{
+    border: 0;
+}
+.instagram .btn{
+    background-color: #fff;
+    color: #E1306C;
+}
