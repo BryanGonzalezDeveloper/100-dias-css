@@ -1,0 +1,105 @@
+:root{
+    --backgrounColor:#21212c;
+    --fontColor:#fff;
+    --iconContactColor:#fff;
+    --iconColor:#06042D   ;
+    --backgroundBody:#7F8E8D ;
+    --backgrounContact:#73727D ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--backgroundBody);
+}
+.container{
+    width:350px;
+    height: 400px;
+    background:var(--backgrounColor) ;
+    position: relative;
+}
+.image{
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.image i{
+    font-size: 5.5rem;
+    color:var(--iconColor);
+}
+div.description{
+    color: var(--fontColor);
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-align: justify;
+}
+.contact div i, .image i{
+    display: block;
+    text-align: center;
+}
+.contact div i{
+    font-size: 20px;
+    color: var(--iconContactColor);
+    line-height: 35px;
+
+}
+.contact{
+    background: var(--backgrounContact);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    left: 0px;
+
+}
+.contact div{
+    width: 35px;
+    height: 35px;
+}
+
+.btn{
+    position: absolute;
+    bottom:20px;
+    left: 20%;
+    width: 60%;
+    height: 35px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    outline: 0;
+    border: none;
+    background: transparent;
+    border: 1.5px solid #fff;
+    box-shadow: 0px 0px 6px #fff;
+    text-transform: uppercase;
+    color: var(--fontColor);
+    font-weight: bold;
+}
+
+.btn{
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
