@@ -1,0 +1,153 @@
+:root{
+    --PrincipalColor:#624386;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--PrincipalColor);
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 50px;
+    background-color: #fff;
+    display: flex;
+    max-width: 800px;
+    box-shadow: 8px 8px 8px #333,-8px -8px 8px #333,0px 0px 15px #fff;
+}
+.image-container{
+    width: 60%;
+    display: flex;
+}
+.form{
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+}
+img{
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+h1{
+    margin-top: 25%;
+    margin-bottom: 20px;
+    color:var(--PrincipalColor);
+    font-size: 24px;
+    margin-left: 15%;
+}
+h3{
+    font-weight: 300;
+    color: #21212c;
+}
+input{
+    width: 80%;
+    margin-bottom: 15px;
+    height: 35px;
+    border: 0;
+    border: 1px solid #333;
+    padding: 0px 10px;
+    outline: 0;
+}
+input[type="button"]{
+    background-color: var(--PrincipalColor);
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 0;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+.content-media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+}
+.content-media div i{
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.content-media div{
+    width: 30px;
+    height: 30px;
+    background: #555;
+    margin-right: 10px;
+}
+/*Efectos hover*/
+input:hover{
+    border: 2px solid var(--PrincipalColor);
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    border: 2px solid var(--PrincipalColor);
+    background-color: transparent;
+    color: var(--PrincipalColor);
+    font-weight: 400;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    font-size: 14px;
+}
+.content-media div:hover{
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
+
+/*Media querys*/
+@media (max-width:750px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-container{
+        height: 250px;
+    }
+    img{
+        margin-top: 40px;
+    }
+    .image-container,.form{
+        width: 100%;
+    }
+    h1{
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    h3,input{
+        font-size: 16px;
+    }
+    input{
+        height: 25px;
+    }
+
+}
+
+@media (max-width:500px){
+    .container{
+        margin: 20px;
+    }
+    .form{
+        margin-left: 30px;
+    }
+}
