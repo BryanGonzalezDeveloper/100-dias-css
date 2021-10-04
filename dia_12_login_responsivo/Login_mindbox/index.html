@@ -25,9 +25,40 @@
  <!--********************-->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 <link rel="icon" href="./favicon.ico" type="image/x-icon">
+<!--Vinculando fuentes-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,200;1,300&display=swap" rel="stylesheet">
     <title>Mindbox&reg;</title>
+    <!--Vinculando estilos-->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="image">
+            <img src="https://assets.mindbox.app/img/assets/mindbox.svg" alt="" class="mb-logo">
+            <img src="https://assets.mindbox.app/img/assets/book_lover.svg" alt="" class="svg">
+            <a href="https://mindbox.app/" target="_blank">Mindbox&reg;</a>
+            <p>
+                Todos los derechos reservados &copy; 2021. <br>
+                Un producto de <a href="https://rdos.consulting/">RDOS Consulting</a>.
+            </p>
+        </div>
+        <div class="login">
+            <img src="https://storage.mindbox.app/data/mbid_20/school/Naxm4zbd71wYPNmPxGnprq3AoWQtdQ70ieIjDMD6.png" alt="ITN logo">
+            <ul class="list">
+                <li><a href="#">Estudiantes</a></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Aspirantes</a></li>
+            </ul>
+            <form action="">
+                <label for="nControl">Número de control:</label>
+                <input type="text" name="nControl" id="nControl" required >
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" required>
+                <button type="button" class="btn">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,158 @@
+:root{
+    --principalColor:#4F39A5;
+    --fontColorUnselected:#4F72C5;
+    --fontColorSelected:#fff;
+    --fontColorInput:#000;
+    --borderColor:#4F72C5;
+    --backgroundColorBody:#F3F4F6;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body,html{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: var(--backgroundColorBody);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1000px;
+    background-color: #fff;
+    display: grid;
+    padding: 30px 5px;
+    grid-template-columns: 50% 50%;
+}
+.image{
+    padding: 20px;
+
+}
+ a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    text-align: left;
+}
+.svg{
+    margin-bottom: 10%;
+}
+.image a{
+    padding-left: 22%;
+}
+.image p a{
+    display: inline;
+    padding-left: 0;
+}
+.image p a:hover{
+    text-decoration: underline;
+}
+p{
+    font-size: 16px;
+    text-align:justify;
+}
+.mb-logo{
+    margin: 8px;
+}
+img{
+    width: 60%;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.login img{
+    width: 96px;
+    height: 96px;
+    margin-left: 23%;
+    margin-bottom: 20px;
+}
+
+.list {
+    list-style-type: none;
+}
+.list li{
+    display: inline-block;
+    background-color:transparent;
+    border: 0;
+
+}
+.list li, .list li a{
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.list li a{
+    text-align: center;
+    color:var(--fontColorUnselected);
+    padding: 5px 15px;
+    border: 1px solid var(--principalColor);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-right:7px;
+    
+}
+.list li a:hover{
+    color: var(--fontColorSelected);
+    cursor: pointer;
+    background-color: var(--principalColor);
+}
+form{
+    margin-top: 25px;
+    height: 250px;
+    padding-left: 15px;
+}
+input{
+    display: block;
+    border: 0;
+    outline: 0;
+    height: 35px;
+    padding: 0 5px;
+    border: 1px solid #555;
+}
+input:focus{
+    border: 1px solid var(--borderColor);
+}
+input,label{
+    margin-bottom: 20px;
+    color: var(--fontColorInput);
+}
+input,.btn{
+    width: 60%;
+}
+label{
+    font-size: 18px;
+    font-weight: 200;
+}
+.btn{
+    height: 35px;
+    font-size: 16px;
+    color: var(--fontColorSelected);
+    background-color: var(--principalColor);
+    border: 0;
+    outline: 0;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+
+}
+.btn:hover{
+    opacity:0.7;
+    cursor:pointer;
+}
