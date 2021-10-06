@@ -1,0 +1,51 @@
+:root{
+    --principalColor:#8500CD;
+    --secondaryColor:#8500CD;
+    --backgroundInput:#8500CD;
+    --iconColor:#717171;
+    --backgroundContainer:#fff;
+    --linkBackgroundColor:#624386;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, var(--principalColor), #EA41F1 );
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    max-width: 800px;
+    min-height: 400px;
+    background-color: var(--backgroundContainer);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+img{
+    width: 60%;
+}
+.image-container,.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.image-container{
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container{
+    margin: 25px 10px;
+}
+h1{
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
