@@ -2,9 +2,9 @@
     --principalColor:#8500CD;
     --secondaryColor:#8500CD;
     --backgroundInput:#8500CD;
-    --iconColor:#717171;
+    --iconColor:#808080;
     --backgroundContainer:#fff;
-    --linkBackgroundColor:#624386;
+    --linkColor:#624386;
 }
 *{
     padding: 0;
@@ -48,4 +48,86 @@ h1{
     margin-top: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+.container-input{
+    display: flex;
+    margin: 15px 0;
+}
+.container-input button{
+    width: 15%;
+    border-top: 1px solid var(--principalColor); 
+    border-left: 1px solid var(--principalColor); 
+    border-bottom: 1px solid var(--principalColor); 
+    border-right: 0px solid #fff;
+}
+.container-input input{
+    border-top: 1px solid var(--principalColor); 
+    border-right: 1px solid var(--principalColor); 
+    border-bottom: 1px solid var(--principalColor); 
+    border-left: 0px solid #fff;
+}
+.container-input button i{
+    text-align: left;
+    color:var(--iconColor);
+    font-size: 16px;
+}
+.container-input input,.container-input button{
+    height: 35px;
+    outline:0 ;
+    background-color: #fff;
+    border-right: 0;
+    outline: 0;
+}
+input{
+    width:70%;
+}
+.login{
+    height: 35px;
+    color:#fff;
+    font-size: 20px;
+    background-color: var(--backgroundInput);
+    border: 0;
+    outline: 0;
+    width: 70%;
+    margin: 0 15%;
+}
+p{
+    margin-top: 15px;
+    margin-left: 15%;
+}
+p.link{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 15px 15% 0 15%;
+}
+a{
+    color: var(--linkColor);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+@media (max-width:750px){
+    .image-container {
+        display:none;
+    }
+    .grid-container{
+        display: flex;
+    }
+    h1{
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width:360px){
+    p.link{
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    .login{
+        height: 25px;
+        font-size: 18px;
+    }
 }
