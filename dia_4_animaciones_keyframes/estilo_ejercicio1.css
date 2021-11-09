@@ -13,6 +13,7 @@ body{
     height: 10vmin;
     width: 10vmin;
     animation:cambiarColor_cambiarTamanio 5s alternate infinite ;
+    -webkit-animation:cambiarColor_cambiarTamanio 5s alternate infinite ;
 }
 
 @keyframes cambiarColor_cambiarTamanio{
