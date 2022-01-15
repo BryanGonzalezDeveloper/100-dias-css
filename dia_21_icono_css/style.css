@@ -1,0 +1,79 @@
+*{
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 80vh;
+    width: 100%;
+}
+h1{
+    display: block;
+    text-align: center;
+}
+.icon-container{
+    margin-top: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .icon:first-child{
+    background-color: #132144;
+}
+.content .icon1 span:first-child{
+    color: #fff;
+    font-size: 40px;
+}
+.content .icon1 span:last-child{
+    color: #03B6B9;
+    text-shadow: 1px 1px 0px #fff,-1px -1px 0px #fff;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+
+.icon2{
+    border: 1.5px solid #132144;
+    font-size: 40px;
+    color: #132144;
+}
+.icon2 span:last-child{
+    text-shadow: 1.5px 1.5px 0px #132144,-1.5px -1.5px 0px #132144;
+    font-size: 46px;
+    color: #B2DFEE;
+}
+
+.icon3{
+    border: 1.5px solid #000;
+    font-size: 40px;
+    color: #000;
+}
+.icon3 span:last-child{
+    text-shadow: 2px 2px 0px #000,-2px -2px 0px #000;
+    font-size: 46px;
+    color: #fff;
+}
