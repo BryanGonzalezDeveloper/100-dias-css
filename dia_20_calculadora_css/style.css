@@ -1,0 +1,97 @@
+:root{
+    --calculatorColor:#3D4443;
+    --displayColor:#BBCD99;
+    --redButtons:#FF4562;
+    --grayButtons:#6C6F6E;
+    --blackButtons:#313131;
+    --orangeButton:#FB9A37;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 25%;
+    height: 70vh;
+    background-color: var(--calculatorColor);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 25px 15px 15px 15px;
+}
+
+.display{
+    width: 100%;
+    height: 45px;
+    background-color: var(--displayColor);
+    border: 3px solid #888;
+    outline: 3.5px solid #202423;
+
+}
+
+.grid{
+    padding: 25px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons{
+    padding: 0% 20%;
+    margin-bottom: 30%;
+    width: 80%;
+    height: 40px;
+    background-color: var(--blackButtons);
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 0px rgba(0,0,0);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.buttons span{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.buttons .gray{
+    background-color: var(--grayButtons);
+}
+
+.fourth .buttons{
+    background-color: var(--redButtons);
+}
+.fourth .buttons:last-child{
+    background-color: var(--orangeButton);
+}
+
+
+.buttons:hover{
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transform: scale(0.995);
+    opacity: 0.85;
+    cursor: pointer;
+    -webkit-transform: scale(0.995);
+    -moz-transform: scale(0.995);
+    -ms-transform: scale(0.995);
+    -o-transform: scale(0.995);
+}
+
