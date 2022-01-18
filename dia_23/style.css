@@ -1,0 +1,205 @@
+:root{
+    --topBackColor:#000;
+    --topBackColo2:#2E2E2E;
+    --backgroundButton:#F9D200;
+    --secondaryFontColor:#939393;
+    --principalFontColor:#fff;
+    --backgroundBody:#0E0E0E;
+}
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--backgroundBody);
+}
+.content{
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.top,.head{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.head{
+    background-color: var(--topBackColor);
+    justify-content: center;
+}
+.top{
+    background-color: var(--topBackColo2);
+    justify-content: flex-start;
+    position: relative;
+}
+.top p{
+    padding-left: 25px;
+    color: var(--principalFontColor);
+    font-size: 18px;
+}
+.top p span:first-child{
+    color: #ccc;
+}
+.top p span:last-child{
+    font-weight: bold;
+}
+.top button{
+    background-color: var(--backgroundButton);
+    color: var(--topBackColo2);
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: absolute;
+    right: 25px;
+}
+h1{
+    color: var(--principalFontColor);
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.menu{
+    background-color: var(--topBackColo2);
+}
+.menu .item{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.menu .item p{
+    font-size: 18px;
+    color: var(--principalFontColor);
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.menu .item p i{
+    padding-right: 15px;
+}
+.menu .item:last-child{
+    background-color: var(--backgroundButton);
+}
+.menu .item:last-child p i, .menu .item:last-child p{
+    color:var(--topBackColo2);
+}
+
+.menu .item:not(:last-child){
+    border-bottom: 1px #000 solid;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+ .option p{
+    padding-left: 35px;
+    color: #888;
+    font-weight: 400;
+}
+.option.selected p{
+    color: var(--principalFontColor);
+    font-weight: bold;
+}
+.second-column-content{
+    width: 100%;
+    height:auto;
+
+}
+
+.settings-title{
+    background-color: var(--principalFontColor);
+    height: 120px;
+
+}
+
+.settings-title p:first-child{
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.settings-title p:last-child{
+    color: var(--secondaryFontColor);
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.content{
+    background-color: #F2F2F2;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 550px;
+}
+.grid-1 p:first-child{
+    color: var(--topBackColo2);
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.theme-description{
+    font-size: 12px;
+    color: #000;
+
+}
+.grid-1{
+    margin-top: 20px;
+    padding-left: 25px;
+}
+.grid-1 p:last-child{
+    padding-top: 20px;
+}
+
+.grid-2{
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.grid-2 div p:first-child{
+    padding-top: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.grid-2 div p:last-child{
+    font-size: 14px;
+}
+.grid-2 div span{
+    font-weight: bolder;
+}
+
+.grid-2 div button{
+    background-color: var(--backgroundButton);
+    font-size: 16px;
+    padding: 6px 12px;
+    color: var(--topBackColo2);
+    font-weight: bold;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin-top: 15px;
+}
