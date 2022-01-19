@@ -1,0 +1,82 @@
+:root{
+    --backgroundBody:#656565;
+    --backgroundBody2:#7B7B7B;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(45deg,var(--backgroundBody),var(--backgroundBody2));
+    min-height: 100vh;
+    width: 100%;
+}
+
+.smartphone{
+    width: 250px;
+    height: 450px;
+    background-color: #000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.smartphone-top{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+}
+.flash{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: radial-gradient(#000 10%,#777 25%,#fff 80%);
+    margin: 0px 35px;
+}
+.brand p{
+    color: #fff;
+    text-align: center;
+    padding: 0px 12px;
+}
+.smartphone-display{
+    margin: 0px 6px;
+    height: 86%;
+    width: 96%;
+    background: linear-gradient(135deg,#868080 2%,#333333,#181818 10%,#000 25%,#000,#333 50%,#222,
+    #000,#000,#000,#000,#000,#222,rgb(56, 54, 54),#333333);
+}
+
+.smartphone-bottom-buttons{
+    width: 100%;
+    height: 7%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.home-button{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top: 1.5px solid #fff;
+    border-bottom: 1.5px  solid #fff;
+
+}
