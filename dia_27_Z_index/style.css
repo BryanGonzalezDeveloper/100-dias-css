@@ -1,0 +1,21 @@
+.blue, .pink.orange{
+    position: absolute;
+}
+
+div{
+    width: 80px;
+    height: 80px;
+}
+.pink{
+    background-color: pink;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    z-index: 100;
+    background-color: teal;
+}
+.green{
+    background-color: green;
+}
